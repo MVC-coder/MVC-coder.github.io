@@ -1,0 +1,71 @@
+.container {
+    /* font-family: arial; */
+    font-size: 24px;
+    height: 100vh;
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #wordHolder{
+    font-size: 64px;
+  }
+  .modalImage{
+    width: 225px;
+    margin-bottom: 20px;
+  }
+  #nextChallengeButton{
+    position: absolute;
+    left: 250px;
+    bottom: 142px;
+    z-index: 0;
+    font-size: 38px !important;
+    height: 74px;
+
+  }
+  .imageSource{
+    font-size: 14px;
+    color: blue;
+  }
+  .centerScreen {
+    margin-top:-130px;
+  }
+  .textAlignCenter{
+    text-align: center;
+  }
+  .floatLeft{
+    float: left;
+  }
+  .floatRight{
+    float: right;
+  }
+  .margin20{
+    margin: 20px;
+  }
+  .clear{
+    clear: both;
+  }
+  #correctBlockHolder, #wrongBlockHolder{
+    margin-top: 10px;
+  }
+  #correctBlockHolder .block, #wrongBlockHolder .block{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    height: 38px;
+    width: 65px;
+    color: white;
+    text-align: center;
+  }
+  .gray{
+    background-color: lightgray;
+  }
+  .green{
+    background-color: #4CAF50;
+  }
+  .red{
+    background-color: #f44336;
+  }
+  .smallText{
+    font-size: 10px;
+  }

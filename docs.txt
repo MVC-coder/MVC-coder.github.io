@@ -1,0 +1,1 @@
+app openen: file:///C:/Users/maart/Desktop/MVC/programmeren/woordlezen/startScreen.html
