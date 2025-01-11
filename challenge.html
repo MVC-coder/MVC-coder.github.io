@@ -43,7 +43,7 @@
   <div class="clear"></div>
   <!-- Header -->
   <div class="container">
-    <div class="centerScreen" id="noChallengeSelected" style="display:none;">
+    <div class="centerScreen" id="noChallengeSelected">
       Kies links een uitdaging.
     </div>
     <div id="nextChallengeModal" class="w3-modal" style="display:none;">
@@ -70,8 +70,8 @@
         </div>
       </div>
     </div>
-    <div class="centerScreen" id="challengeSelected">
-      <div id="wordHolder" class="textAlignCenter">Hier komt het woord</div>
+    <div class="centerScreen" id="challengeSelected" style="display:none;">
+      <div id="wordHolder" class="textAlignCenter"> </div>
       <div id="buttonsHolder" class="textAlignCenter">
         <button id="correctButton" class="w3-button w3-round-large w3-green">Juist</button>
         <button id="wrongButton" class="w3-button w3-round-large w3-red">Fout</button>
