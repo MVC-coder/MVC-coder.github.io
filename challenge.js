@@ -54,6 +54,7 @@ $( document ).ready( function(){
         $("#noChallengeSelected").hide();
         resetForOtherChallenge();
         var level = $(this).attr("data-level");
+        $(this).addClass("w3-greenImportant").siblings().removeClass("w3-greenImportant");
         allWords = getWordsForLevel(level);
         $("#challengeName").text("LEVEL " + level + ": " + allChallenges[level]["challengeName"]);
         currentLevel = allChallenges[level]["level"];

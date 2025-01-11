@@ -10,6 +10,10 @@
   #wordHolder{
     font-size: 64px;
   }
+  .w3-text-teal.w3-greenImportant{
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+  }
   .modalImage{
     width: 225px;
     margin-bottom: 20px;
