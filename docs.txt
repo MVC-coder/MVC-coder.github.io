@@ -1,1 +1,1 @@
-app openen: file:///C:/Users/maart/Desktop/MVC/programmeren/woordlezen/startScreen.html
+app openen: file:///C:/Users/maart/Desktop/MVC/programmeren/mvc-coder.github.io/index.html
