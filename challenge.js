@@ -1,6 +1,4 @@
 $( document ).ready( function(){
-    $("#challengeSelected").hide();
-    $('#nextChallengeModal').hide();
     hideAllNextChallengeImages();
     
     var allWords = [];
