@@ -42,7 +42,6 @@ $( document ).ready( function(){
         }
     }
     createChallengeButtons(allChallenges);
-
     function createChallengeButtons(allChallenges){
         var buttons = [];
         for (const [key, value] of Object.entries(allChallenges)) {
