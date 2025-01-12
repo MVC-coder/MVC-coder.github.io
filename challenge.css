@@ -49,13 +49,17 @@
   .clear{
     clear: both;
   }
-  #correctBlockHolder, #wrongBlockHolder{
+  #correctBlockHolder{
+    margin-top: 20px;
+  }
+  #wrongBlockHolder{
     margin-top: 10px;
   }
   #correctBlockHolder .block, #wrongBlockHolder .block{
     display: block;
     float: left;
     margin-right: 20px;
+    margin-bottom: 10px;
     height: 38px;
     width: 65px;
     color: white;

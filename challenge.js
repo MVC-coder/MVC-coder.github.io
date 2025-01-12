@@ -136,13 +136,13 @@ $( document ).ready( function(){
     }
     function checkChangeLevel(){
         var changeLevel = "no";
-        if(correctCounter >= 5 && wrongCounter <= 1){
+        if(correctCounter >= 10 && wrongCounter <= 2){
             changeLevel = "up";
         }
-        if(correctCounter >= 5 && wrongCounter === 2){
+        if(correctCounter >= 10 && wrongCounter === 3){
             changeLevel = "repeat";
         }
-        if(wrongCounter >= 3){
+        if(wrongCounter >= 4){
             changeLevel = "down";
         }
         return changeLevel;
