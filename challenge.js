@@ -42,6 +42,7 @@ $( document ).ready( function(){
         }
     }
     createChallengeButtons(allChallenges);
+
     function createChallengeButtons(allChallenges){
         var buttons = [];
         for (const [key, value] of Object.entries(allChallenges)) {
@@ -102,9 +103,15 @@ $( document ).ready( function(){
         showCorrectImageForNextChallenge(mode);
         if(mode === "up"){
             currentLevel = currentLevel + 1;
+            if(currentLevel > Object.keys(allChallenges).length){
+                currentLevel = Object.keys(allChallenges).length;
+            }
         }
         if(mode === "down"){
             currentLevel = currentLevel - 1;
+            if(currentLevel < 1){
+                currentLevel = 1;
+            }
         }
         // if mode === repeat => currentLevel doesn't change;
         allWords = getWordsForLevel(currentLevel);
