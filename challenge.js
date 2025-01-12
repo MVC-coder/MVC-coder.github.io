@@ -100,7 +100,17 @@ $( document ).ready( function(){
         resetForOtherChallenge();
         $('#nextChallengeModal').show();
         showCorrectImageForNextChallenge(mode);
-        
+        if(mode === "up"){
+            currentLevel = currentLevel + 1;
+        }
+        if(mode === "down"){
+            currentLevel = currentLevel - 1;
+        }
+        // if mode === repeat => currentLevel doesn't change;
+        allWords = getWordsForLevel(currentLevel);
+        $("#challengeName").text("LEVEL " + currentLevel + ": " + allChallenges[currentLevel]["challengeName"]);
+        $("button[data-level='" + currentLevel +"']").addClass("w3-greenImportant").siblings().removeClass("w3-greenImportant");
+        showNextWord();
     }
     function showCorrectImageForNextChallenge(mode){
         hideAllNextChallengeImages();
