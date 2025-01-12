@@ -59,6 +59,8 @@ $( document ).ready( function(){
         $("#challengeName").text("LEVEL " + level + ": " + allChallenges[level]["challengeName"]);
         currentLevel = allChallenges[level]["level"];
         $("#challengeSelected").show();
+        $("#pointsPerCorrectWord span").text(allChallenges[currentLevel]["points"]);
+        $("#pointsPerCorrectWord").show();
         showNextWord();
     })
 
@@ -72,8 +74,13 @@ $( document ).ready( function(){
         correctCounter++;
         showCorrectScore();
         colorBlockAndSaveWord("green");
+        animatePointsPerCorrectWord();
         var nextChallenge = checkChangeLevel();
         handleNextChallenge(nextChallenge);
+    }
+    function animatePointsPerCorrectWord(){
+        $("#pointsPerCorrectWord").addClass("growLetters");
+        window.setTimeout(function(){$("#pointsPerCorrectWord").removeClass("growLetters")},400);
     }
     function wrongClicked(){
         wrongCounter++;
@@ -116,6 +123,7 @@ $( document ).ready( function(){
         allWords = getWordsForLevel(currentLevel);
         $("#challengeName").text("LEVEL " + currentLevel + ": " + allChallenges[currentLevel]["challengeName"]);
         $("button[data-level='" + currentLevel +"']").addClass("w3-greenImportant").siblings().removeClass("w3-greenImportant");
+        $("#pointsPerCorrectWord span").text(allChallenges[currentLevel]["points"]);
         showNextWord();
     }
     function showCorrectImageForNextChallenge(mode){

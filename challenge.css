@@ -7,6 +7,15 @@
     justify-content: center;
     align-items: center;
   }
+  #pointsPerCorrectWord{
+    font-size: 32px;
+    color: #4CAF50;
+    transition: all 0.3s;
+    position: absolute;
+  }
+  #pointsPerCorrectWord.growLetters{
+    font-size: 48px;
+  }
   #wordHolder{
     font-size: 64px;
   }
