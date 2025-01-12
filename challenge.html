@@ -34,17 +34,17 @@
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-  <div id="challengeName" class="floatLeft margin20">
+<div class="w3-main backgroundImage" style="margin-left:300px">
+  <div id="challengeName" class="floatLeft margin20 whiteBackground">
   </div>
-  <div class="floatRight margin20" style="margin-right: 30px;">
+  <div class="floatRight margin20 whiteBackground" style="margin-right: 30px;">
     Punten: <span id="pointsHolder">0</span><br>
-    <div id="pointsPerCorrectWord" style="display: none;">+<span></span></div>
+    <div id="pointsPerCorrectWord" style="display: none;" class="whiteBackground">+<span></span></div>
   </div>
   <div class="clear"></div>
   <!-- Header -->
   <div class="container">
-    <div class="centerScreen" id="noChallengeSelected">
+    <div class="centerScreen whiteBackground" id="noChallengeSelected">
       Kies links een uitdaging.
     </div>
     <div id="nextChallengeModal" class="w3-modal" style="display:none;">
@@ -72,7 +72,7 @@
       </div>
     </div>
     <div class="centerScreen" id="challengeSelected" style="display:none;">
-      <div id="wordHolder" class="textAlignCenter"> </div>
+      <div id="wordHolder" class="textAlignCenter whiteBackground" style="margin-bottom: 20px;"> </div>
       <div id="buttonsHolder" class="textAlignCenter">
         <button id="correctButton" class="w3-button w3-round-large w3-green">Juist</button>
         <button id="wrongButton" class="w3-button w3-round-large w3-red">Fout</button>
@@ -89,7 +89,7 @@
         <span class="block gray"></span>
         <span class="block gray"></span>
         <span class="block gray"></span>
-        <span id="correctCounter">0</span>
+        <span id="correctCounter" class="whiteBackground">0</span>
         <div class= "clear"></div>
       </div>
       <div id="wrongBlockHolder">
@@ -98,7 +98,7 @@
         <span class="block gray"></span>
         <span class="block gray"></span>
         <span class="block gray"></span>
-        <span id="wrongCounter">0</span>
+        <span id="wrongCounter" class="whiteBackground">0</span>
         <div class= "clear"></div>
       </div>  
     </div>

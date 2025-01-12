@@ -19,22 +19,34 @@
   #wordHolder{
     font-size: 64px;
   }
+  .whiteBackground{
+    background-color: white;
+    padding: 10px;
+  }
   .w3-text-teal.w3-greenImportant{
     color: #fff !important;
     background-color: #4CAF50 !important;
+    background-size: cover;
   }
   .modalImage{
     width: 225px;
     margin-bottom: 20px;
   }
+  .backgroundImage{
+    background-image: url("./images/plants2.jpg");
+    background-repeat: no-repeat;
+  }
   #nextChallengeButton{
     position: absolute;
-    left: 250px;
+    right: 228px;
     bottom: 142px;
     z-index: 0;
     font-size: 38px !important;
     height: 74px;
 
+  }
+  #nextChallengeModal{
+    text-align: center;
   }
   .imageSource{
     font-size: 14px;
