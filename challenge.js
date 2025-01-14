@@ -70,6 +70,20 @@ $( document ).ready( function(){
             baseWord: "prins",
             points:12,
             words: ["klink","klank","plank","slank","krans","krant","kramp","krimp","slecht","vlecht","vlucht","klucht","slang","stang","kring","spaart","sport","spurt","speurt","slikt","slaakt","slaapt","sluipt","sterk","slurf","snoept","speelt","glans","glimt","gluurt","slaapt","sleept","sluipt","sloopt","flens","flipt","fles","flost","stank","drank","klank","kleurt","speurt","plons","brons","prins","prent","zwelt","zwiert","zwemt","frons","brons","brand","spons","krans","plons","krant","plant","prent","klant","klapt","klopt","grijpt","gromt","snapt","snikt","snoept","snuit","vraagt","vriest","klaagt","klust","klimt","kleurt","kramp","stamp","stomp","klomp","sterk","dwerg","sterf","zwerm"]
+        },
+        10:{
+            level:10,
+            challengeName: "mkmmm kort / lang / tweetekenklank",
+            baseWord: "worst",
+            points: 13,
+            words: ["worst", "dorst", "korst", "morst", "barst", "wenst", "durft", "gunst", "kunst", "botst", "komst"]
+        },
+        11:{
+            level: 11,
+            challengeName: "mmmkm kort / lang / tweetekenklank",
+            baseWord: "straat",
+            points: 14,
+            words: ["strik", "spreeuw", "schreeuw", "stroom", "stram", "schuur", "spruit", "straat", "strak", "straal", "schuw", "schuur"]
         }
     }
     createChallengeButtons(allChallenges);
