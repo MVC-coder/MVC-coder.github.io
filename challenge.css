@@ -7,6 +7,11 @@
     justify-content: center;
     align-items: center;
   }
+  .be-vietnam-pro-thin {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
   #pointsPerCorrectWord{
     font-size: 32px;
     color: #4CAF50;
@@ -79,12 +84,13 @@
   #correctBlockHolder .block, #wrongBlockHolder .block{
     display: block;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 10px;
     height: 38px;
-    width: 80px;
+    width: 90px;
     color: white;
     text-align: center;
+    font-size: 20px;
   }
   .gray{
     background-color: lightgray;
