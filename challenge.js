@@ -84,7 +84,43 @@ $( document ).ready( function(){
             baseWord: "straat",
             points: 14,
             words: ["strik", "spreeuw", "schreeuw", "stroom", "stram", "schuur", "spruit", "straat", "strak", "straal", "schuw", "schuur"]
-        }
+        },
+        12:{
+            level: 12,
+            challengeName: "ge-, be-, ver- kort / lang / tweetekenklank zonder cluster",
+            baseWord: "gebouw",
+            points: 15,
+            words: ["gebouw", "gebed", "gedaan", "geloof", "gehuil", "gezin", "geluid", "geduw", "geluk", "gehuil", "getal", "begin","bedoel","betaal", "bevel", "bezit", "bezoek", "beroep", "beleid", "beleef", "verhuis", "verhaal", "verlies", "vergif", "verlof", "verbod", "verkeer", "verschil", "vervuil", "vermoeid", "versier"]
+        },
+        13:{
+            level: 13,
+            challengeName: "ge-, be-, ver- kort / lang cluster mkmm",
+            baseWord: "beleefd",
+            points: 16,
+            words: ["bedacht", "beleefd", "verjaard", "verhuist", "gefeest", "bericht", "bezocht", "geremd", "verbaasd", "gemaakt", "geschikt", "gerecht", "gepast", "geschenk", "gedicht", "verkeerd", "gezond", "geduld", "bejaard", "geraakt"]
+        },
+        14:{
+            level: 14,
+            challengeName: "ge-, be-, ver- kort / lang / tweetekenklank cluster mkmm",
+            baseWord: "verliefd",
+            points: 17,
+            words: ["gekuist", "gekauwd", "gerijmd", "gescheurd", "gejuicht", "verbouwd", "gezoend", "vervuild", "versierd", "gebeurd", "gepoetst", "vernield", "verliefd", "verloofd", "gebouwd", "gezicht", "geliefd"]
+        },
+        15:{
+            level: 15,
+            challengeName: "ge-, be-, ver- kort / lang cluster mmkm",
+            baseWord: "geblaf",
+            points: 18,
+            words: ["bedrag", "begraaf", "bestaan", "gedrum", "vertraag", "verslag", "gepraat", "bestuur", "verbreek", "verfris", "geblaf", "verslaan", "getrek", "gedrag", "gebrek", "gedraai", "verstuur", "verbreek", "vertrek", "gekleed", "bestel"]
+        },
+        16:{
+            level: 16,
+            challengeName: "ge-, be-, ver- kort / lang / tweetekenklank cluster mmkm",
+            baseWord: "verdriet",
+            points: 19,
+            words: ["gesnuif", "gesnuit", "bedrijf","bevrijd", "bedroefd", "verdriet", "gestoef", "gezwijg", "gebreid", "bevrijd", "vertrouw", "gestrijk", "gekrijs", "gekruid", "gebruik"]
+        },
+
     }
     createChallengeButtons(allChallenges);
     function createChallengeButtons(allChallenges){
