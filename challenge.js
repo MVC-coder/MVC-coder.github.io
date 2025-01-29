@@ -120,7 +120,34 @@ $( document ).ready( function(){
             points: 19,
             words: ["gesnuif", "gesnuit", "bedrijf","bevrijd", "bedroefd", "verdriet", "gestoef", "gezwijg", "gebreid", "bevrijd", "vertrouw", "gestrijk", "gekrijs", "gekruid", "gebruik"]
         },
-
+        17:{
+            level: 17,
+            challengeName: "open lettergreep zonder clusters eindigend op -en",
+            baseWord: "noten",
+            points: 20,
+            words: ["maken","manen","jagen","raken","zaken","haven","raven","roken","bonen","noten","lopen","poten","buren","vuren","duren","huren","muren","geven","beven","leven","meren","beren"]
+        },
+        18:{
+            level: 18,
+            challengeName: "open lettergreep zonder clusters eindigend op -e, -er, -el",
+            baseWord: "zomer",
+            points: 21,
+            words: ["meter","peter","veter","gele","lege","hoge","rode","roker","zomer","roze","lage","lade","lader","kater","vader","zure","dure","gure"]
+        },
+        19:{
+            level: 19,
+            challengeName: "open lettergreep zonder clusters eindigend op -ig, -ing",
+            baseWord: "koning",
+            points: 22,
+            words: ["lenig","benig","deling","weging","potig","honing","woning","romig","rozig","daling","paling","lading","vurig"]
+        },
+        20:{
+            level: 20,
+            challengeName: "open lettergreep zonder clusters: alles door elkaar",
+            baseWord: "kamer",
+            points: 23,
+            words: ["kamer","koning","lade","roze","beker","zeven","dagen","ramen","merel","kopen","zegel","weten","duwen","regen","jarig","lege","woning","lager","hoger","kade","dure"]
+        }
     }
     createChallengeButtons(allChallenges);
     function createChallengeButtons(allChallenges){
