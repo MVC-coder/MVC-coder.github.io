@@ -6,8 +6,7 @@ $( document ).ready( function(){
     var wrongCounter = 0;
     var pointsTotal = 0; // sum of points for all correct answers
     var currentLevel = 0;
-
-    const allChallenges = {
+    var allChallenges = {
         1: {
             level: 1,
             challengeName: "km / mk",
@@ -34,7 +33,7 @@ $( document ).ready( function(){
             challengeName: "mkm tweetekenklank",
             baseWord: "duim",
             points: 7,
-            words: ["kuil","kuis","kuit","kuif","kuip","luik","luis","tuin","tuig","muil","muis","fuif","vuil","puik","zuil","zuig","huil","huis","duik","duim","duin","duif","wuif","buik","buis","buit","buil","koek","koel","loep","loer","toen","toer","moes","moet","moer","noem","voet","voer","poel","poes","poen","poep","zoek","zoet","zoem","zoen","zoef","hoek","hoef","doek","doel","doet","doen","boek","boel","boem","boen","boef","boeg","boer","roet","roem","roep","roer","kous","touw","mouw","vouw","zout","hout","jou","bout","bouw","rouw","fout","hou","wou","kies","kiem","kier","lief","liep","lieg","tien","mier","nies","niet","nier","fier","vies","vier","piek","piep","pier","ziek","ziet","zien","giet","hiel","hier","dien","dief","diep","dier","keur","leuk","leun","neus","peul","zeur","geur","deuk","deur","beuk","reus","reuk","kei","lei","sein","mei","zeil","wei","geit","reis","feit","lauw","saus","nauw","pauw","gauw","dauw","rauw","kijk","lijk","lijm","lijf","mijn","nijp","fijn","vijs","vijf","vijg","pijl","pijn"]
+            words: ["lauw","saus","nauw","pauw","gauw","dauw","rauw","kuil","kuis","kuit","kuif","kuip","luik","luis","tuin","tuig","muil","muis","fuif","vuil","puik","zuil","zuig","huil","huis","duik","duim","duin","duif","wuif","buik","buis","buit","buil","koek","koel","loep","loer","toen","toer","moes","moet","moer","noem","voet","voer","poel","poes","poen","poep","zoek","zoet","zoem","zoen","zoef","hoek","hoef","doek","doel","doet","doen","boek","boel","boem","boen","boef","boeg","boer","roet","roem","roep","roer","kous","touw","mouw","vouw","zout","hout","jou","bout","bouw","rouw","fout","hou","wou","kies","kiem","kier","lief","liep","lieg","tien","mier","nies","niet","nier","fier","vies","vier","piek","piep","pier","ziek","ziet","zien","giet","hiel","hier","dien","dief","diep","dier","keur","leuk","leun","neus","peul","zeur","geur","deuk","deur","beuk","reus","reuk","kei","lei","sein","mei","zeil","wei","geit","reis","feit","kijk","lijk","lijm","lijf","mijn","nijp","fijn","vijs","vijf","vijg","pijl","pijn"]
         },
         5: {
             level:5,
@@ -147,6 +146,26 @@ $( document ).ready( function(){
             baseWord: "kamer",
             points: 23,
             words: ["kamer","koning","lade","roze","beker","zeven","dagen","ramen","merel","kopen","zegel","weten","duwen","regen","jarig","lege","woning","lager","hoger","kade","dure"]
+        }
+    }
+    var limitation = new URLSearchParams(window.location.search).get("limitation");
+    if(limitation !== "none"){
+        filterWordsInAllChallengesFromLetters(limitation);
+    }
+    function filterWordsInAllChallengesFromLetters(limitation){
+        if(limitation === "thema6"){
+            const unknownLettersThema6 = ["aai","ooi","oei","au","ei","c","ng","nk","eeuw","ieuw","ch","cht"];
+            for(let x=1; x<Object.keys(allChallenges).length +1; x++){
+                allChallenges[x].words = allChallenges[x].words.filter(function(word){
+                    var unknownLetterFound = false;
+                    for(let y=0; y<unknownLettersThema6.length; y++){
+                        if(word.indexOf(unknownLettersThema6[y])>=0){
+                            unknownLetterFound = true;
+                        }
+                    }
+                    return !unknownLetterFound;
+                });
+            }
         }
     }
     createChallengeButtons(allChallenges);
