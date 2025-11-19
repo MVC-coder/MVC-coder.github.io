@@ -1,1 +1,2 @@
-app openen: file:///C:/Users/maart/Desktop/MVC/programmeren/mvc-coder.github.io/index.html
+app openen: 
+file:///C:/MVC/programmeren/mvc-coder.github.io/index.html

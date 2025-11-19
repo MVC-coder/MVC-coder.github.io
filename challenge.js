@@ -6,7 +6,24 @@ $( document ).ready( function(){
     var wrongCounter = 0;
     var pointsTotal = 0; // sum of points for all correct answers
     var currentLevel = 0;
-    var allChallenges = {
+    var grade = new URLSearchParams(window.location.search).get("grade"); // L1 or L2 = eerste leerjaar of tweede leerjaar
+    var allChallengesL1 = {
+        1: {
+            level: 1,
+            challengeName: "u van mus",
+            baseWord: "mus",
+            points: 1,
+            words: ["tor","bal","met","pol","beer","min","kan","kar","mos","put","mol","leer","kin","sop","reep","mes","pan","ken","mop","mees","mus","bus","lus","kus","buk"]
+        },
+        2: {
+            level: 2,
+            challengeName: "v van vis",
+            baseWord: "vis",
+            points: 1,
+            words: ["vis","bak","pen","lis","vak","ren","val","pak","bus","vul","mus","vit","nis","vat","ken","vin","sis","tak","veel","ben","van","vos","vol","sis"]
+        }
+    }
+    var allChallengesL2 = {
         1: {
             level: 1,
             challengeName: "km / mk",
@@ -148,26 +165,7 @@ $( document ).ready( function(){
             words: ["kamer","koning","lade","roze","beker","zeven","dagen","ramen","merel","kopen","zegel","weten","duwen","regen","jarig","lege","woning","lager","hoger","kade","dure"]
         }
     }
-    var limitation = new URLSearchParams(window.location.search).get("limitation");
-    if(limitation !== "none"){
-        filterWordsInAllChallengesFromLetters(limitation);
-    }
-    function filterWordsInAllChallengesFromLetters(limitation){
-        if(limitation === "thema6"){
-            const unknownLettersThema6 = ["aai","ooi","oei","au","ei","c","ng","nk","eeuw","ieuw","ch","cht"];
-            for(let x=1; x<Object.keys(allChallenges).length +1; x++){
-                allChallenges[x].words = allChallenges[x].words.filter(function(word){
-                    var unknownLetterFound = false;
-                    for(let y=0; y<unknownLettersThema6.length; y++){
-                        if(word.indexOf(unknownLettersThema6[y])>=0){
-                            unknownLetterFound = true;
-                        }
-                    }
-                    return !unknownLetterFound;
-                });
-            }
-        }
-    }
+    var allChallenges = grade === "L1" ? allChallengesL1 : allChallengesL2; 
     createChallengeButtons(allChallenges);
     function createChallengeButtons(allChallenges){
         var buttons = [];
