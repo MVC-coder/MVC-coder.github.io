@@ -21,6 +21,20 @@ $( document ).ready( function(){
             baseWord: "vis",
             points: 1,
             words: ["vis","bak","pen","lis","vak","ren","val","pak","bus","vul","mus","vit","nis","vat","ken","vin","sis","tak","veel","ben","van","vos","vol","sis"]
+        },
+        3: {
+            level: 3,
+            challengeName: "oe van poes",
+            baseWord: "poes",
+            points: 1,
+            words: ["poes","boer","boek","boe","koe","koek","voet","toe","moet","toen","vul","vak","bus","mus","val","vel"]
+        },
+        4: {
+            level: 4,
+            challengeName: "h en aa van haan",
+            baseWord: "haan",
+            points: 1,
+            words: ["haan","haar","mus","laat","hak","poel","hen","baas","paal","koe","vaas","heer","bus","haak","raam","maat","kar","hik","heen","kaal","hap","hok","maar","val","hol"]
         }
     }
     var allChallengesL2 = {
