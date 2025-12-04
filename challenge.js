@@ -35,6 +35,13 @@ $( document ).ready( function(){
             baseWord: "haan",
             points: 1,
             words: ["haan","haar","mus","laat","hak","poel","hen","baas","paal","koe","vaas","heer","bus","haak","raam","maat","kar","hik","heen","kaal","hap","hok","maar","val","hol"]
+        },
+        5: {
+            level: 5,
+            challengeName: "oo van boom",
+            baseWord: "boom",
+            points: 1,
+            words: ["boom","oom","room","hoor","voor","boor","look","rook","kook","boor","boos","boot","bom","boem","kook","rook","toon","bon","ton","rok","bim","bam","maar","val","hol"]
         }
     }
     var allChallengesL2 = {
