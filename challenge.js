@@ -42,6 +42,20 @@ $( document ).ready( function(){
             baseWord: "boom",
             points: 1,
             words: ["boom","oom","room","hoor","voor","boor","look","rook","kook","boor","boos","boot","bom","boem","kook","rook","toon","bon","ton","rok","bim","bam","maar","val","hol"]
+        },
+        6: {
+            level: 6,
+            challengeName: "d van deur",
+            baseWord: "deur",
+            points: 1,
+            words: ["deur","doek","dak","dat","dan","doe","doel","doen","dal","das","dik","dit","dus","daar","doos","door","duur","pak","boek","buur","paar","beer","peer","hoek","haak","huur","tuur"]
+        },
+        7: {
+            level: 7,
+            challengeName: "eu van deur",
+            baseWord: "deur",
+            points: 1,
+            words: ["deur","deuk","deun","beuk","leur","leun","leuk","keur","geur","peuk","geul","kaak","dus","boos","doos","door","duur","pak","boek","boor","paar","beer","peer","hoek","haak","huur","muur"]
         }
     }
     var allChallengesL2 = {
