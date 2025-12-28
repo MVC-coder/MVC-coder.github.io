@@ -56,8 +56,62 @@ $( document ).ready( function(){
             baseWord: "deur",
             points: 1,
             words: ["deur","deuk","deun","beuk","leur","leun","leuk","keur","geur","peuk","geul","kaak","dus","boos","doos","door","duur","pak","boek","boor","paar","beer","peer","hoek","haak","huur","muur"]
+        },
+        8: {
+            level: 8,
+            challengeName: "ij van ijs",
+            baseWord: "ijs",
+            points: 1,
+            words: ["rijm","lijm","mij","rij","jij","hij","wij","wijs","vijs","hijg","rijk","rijp","rijm","wijs","wijn","bijl","leuk","deur","dak","dat","boom","haar","hik","huur"]
+        },
+        9: {
+            level: 9,
+            challengeName: "sch van school",
+            baseWord: "school",
+            points: 1,
+            words: ["school","scheer","schop","schoen","schoon","schijn","scheen","scheef","schil","scheel","schip","schap","schaal","rijk","wijn","jij","wijs","dik","deur","leuk","daar","haak","hij","geur","reuk","haas","hoek"]
+        },
+        10: {
+            level: 10,
+            challengeName: "ie van vier",
+            baseWord: "vier",
+            points: 1,
+            words: ["giet","piet","niet","biet","vier","mier","bier","pier","kier","wiel","schiet","riet","piek","piep","vies","viel","hiel","piet","schip","school","deur","haar","hij","zij","deuk","haak","hier"]
+        },
+        11: {
+            level: 11,
+            challengeName: "ou van touw",
+            baseWord: "touw",
+            points: 1,
+            words: ["koud","goud","woud","hout","fout","bout","jou","hou","kou","jouw","mouw","schouw","vouw","bouw","touw","hier","dier","schiet","vier","scheef","schoon","schoen","hij","kijk","lijm","deur","door"]
+        },
+        12: {
+            level: 12,
+            challengeName: "ui van duif",
+            baseWord: "duif",
+            points: 1,
+            words: ["duif","kuif","duik","luik","buik","uil","buil","vuil","kuil","ruil","duim","kuis","ruis","buis","duin","fuif","huil","ruik","ruim","tuin","bouw","hout","dier","hier","schat","schoon","riep"]
+        },
+        13: {
+            level: 13,
+            challengeName: "z van zon",
+            baseWord: "zon",
+            points: 1,
+            words: ["zon","zoon","zool","zin","ziek","zak","zoek","zie","zoen","zal","zeef","zoem","zes","zet","duik","buik","vuil","kou","schouw","biet","zie","schaal"]
         }
+        
     }
+
+/* EMPTY LEVEL TEMPLATE
+7: {
+            level: 7,
+            challengeName: " van ",
+            baseWord: "",
+            points: 1,
+            words: ["","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+        }
+*/
+
     var allChallengesL2 = {
         1: {
             level: 1,
