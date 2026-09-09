@@ -5,7 +5,7 @@ var allLetters = {
             name: "inktvis"
         }],
         molEnBeer: {
-            image: "",
+            image: "ik.jpg",
             name: "ik"
         }
     },
@@ -15,7 +15,7 @@ var allLetters = {
             name: "krokodil"
         }],
         molEnBeer: {
-            image: "",
+            image: "ik.jpg",
             name: "ik"
         }
     },
@@ -28,7 +28,7 @@ var allLetters = {
             name: "muur"
         }],
         molEnBeer: {
-            image: "",
+            image: "mol.jpg",
             name: "mol"
         }
     },
@@ -41,7 +41,7 @@ var allLetters = {
             name: "orkest"
         }],
         molEnBeer: {
-            image: "",
+            image: "mol.jpg",
             name: "mol"
         }
     },
@@ -51,7 +51,7 @@ var allLetters = {
             name: "ladder"
         }],
         molEnBeer: {
-            image: "",
+            image: "mol.jpg",
             name: "mol"
         }
     },
@@ -61,7 +61,7 @@ var allLetters = {
             name: "beer"
         }],
         molEnBeer: {
-            image: "",
+            image: "beer.jpg",
             name: "beer"
         }
     },
@@ -71,7 +71,7 @@ var allLetters = {
             name: "eenhoorn"
         }],
         molEnBeer: {
-            image: "",
+            image: "beer.jpg",
             name: "beer"
         }
     },
@@ -81,7 +81,7 @@ var allLetters = {
             name: "ridder"
         }],
         molEnBeer: {
-            image: "",
+            image: "beer.jpg",
             name: "beer"
         }
     },
@@ -91,7 +91,7 @@ var allLetters = {
             name: "appel"
         }],
         molEnBeer: {
-            image: "",
+            image: "an.jpg",
             name: "an"
         }
     },
@@ -101,7 +101,7 @@ var allLetters = {
             name: "nietje"
         }],
         molEnBeer: {
-            image: "",
+            image: "an.jpg",
             name: "an"
         }
     },
@@ -111,7 +111,7 @@ var allLetters = {
             name: "tak"
         }],
         molEnBeer: {
-            image: "",
+            image: "tom.jpg",
             name: "tom"
         }
     },
@@ -124,7 +124,7 @@ var allLetters = {
             name: "paard"
         }],
         molEnBeer: {
-            image: "",
+            image: "pen.jpg",
             name: "pen"
         }
     },
@@ -134,7 +134,7 @@ var allLetters = {
             name: "emmer"
         }],
         molEnBeer: {
-            image: "",
+            image: "pen.jpg",
             name: "pen"
         }
     },
@@ -144,7 +144,7 @@ var allLetters = {
             name: "jojo"
         }],
         molEnBeer: {
-            image: "",
+            image: "jas.jpg",
             name: "jas"
         }
     },
@@ -154,7 +154,7 @@ var allLetters = {
             name: "slang"
         }],
         molEnBeer: {
-            image: "",
+            image: "jas.jpg",
             name: "jas"
         }
     },
@@ -164,7 +164,7 @@ var allLetters = {
             name: "put"
         }],
         molEnBeer: {
-            image: "",
+            image: "mus.jpg",
             name: "mus"
         }
     },
@@ -174,7 +174,7 @@ var allLetters = {
             name: "vogel"
         }],
         molEnBeer: {
-            image: "",
+            image: "vis.jpg",
             name: "vis"
         }
     },
@@ -184,7 +184,7 @@ var allLetters = {
             name: "oehoe"
         }],
         molEnBeer: {
-            image: "",
+            image: "poes.jpg",
             name: "poes"
         }
     },
@@ -194,7 +194,7 @@ var allLetters = {
             name: "haan"
         }],
         molEnBeer: {
-            image: "",
+            image: "haan.jpg",
             name: "haan"
         }
     },
@@ -204,7 +204,7 @@ var allLetters = {
             name: "aap"
         }],
         molEnBeer: {
-            image: "",
+            image: "haan.jpg",
             name: "haan"
         }
     },
@@ -214,7 +214,7 @@ var allLetters = {
             name: "oog"
         }],
         molEnBeer: {
-            image: "",
+            image: "boom.jpg",
             name: "boom"
         }
     },
@@ -224,7 +224,7 @@ var allLetters = {
             name: "was"
         }],
         molEnBeer: {
-            image: "",
+            image: "weg.jpg",
             name: "weg"
         }
     },
@@ -234,7 +234,7 @@ var allLetters = {
             name: "goudvis"
         }],
         molEnBeer: {
-            image: "",
+            image: "weg.jpg",
             name: "weg"
         }
     },
@@ -244,7 +244,7 @@ var allLetters = {
             name: "vuur"
         }],
         molEnBeer: {
-            image: "",
+            image: "muur.jpg",
             name: "muur"
         }
     },
@@ -254,7 +254,7 @@ var allLetters = {
             name: "dino"
         }],
         molEnBeer: {
-            image: "",
+            image: "deur.jpg",
             name: "deur"
         }
     },
@@ -264,7 +264,7 @@ var allLetters = {
             name: "neushoorn"
         }],
         molEnBeer: {
-            image: "",
+            image: "deur.jpg",
             name: "deur"
         }
     },
@@ -274,14 +274,14 @@ var allLetters = {
             name: "ijs"
         }],
         molEnBeer: {
-            image: "",
+            image: "ijs.jpg",
             name: "ijs"
         }
     },
     sch: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "school.jpg",
             name: "school"
         }
     },
@@ -291,7 +291,7 @@ var allLetters = {
             name: "gieter"
         }],
         molEnBeer: {
-            image: "",
+            image: "vier.jpg",
             name: "vier"
         }
     },
@@ -301,7 +301,7 @@ var allLetters = {
             name: "touw"
         }],
         molEnBeer: {
-            image: "",
+            image: "touw.jpg",
             name: "touw"
         }
     },
@@ -311,7 +311,7 @@ var allLetters = {
             name: "uil"
         }],
         molEnBeer: {
-            image: "",
+            image: "duif.jpg",
             name: "duif"
         }
     },
@@ -321,7 +321,7 @@ var allLetters = {
             name: "flamingo"
         }],
         molEnBeer: {
-            image: "",
+            image: "duif.jpg",
             name: "duif"
         }
     },
@@ -331,28 +331,28 @@ var allLetters = {
             name: "zwaan"
         }],
         molEnBeer: {
-            image: "",
+            image: "zon.jpg",
             name: "zon"
         }
     },
     aai: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "haai.jpg",
             name: "haai"
         }
     },
     ooi: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "kooi.jpg",
             name: "kooi"
         }
     },
     oei: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "roei.jpg",
             name: "roei"
         }
     },
@@ -362,7 +362,7 @@ var allLetters = {
             name: "auto"
         }],
         molEnBeer: {
-            image: "",
+            image: "pauw.jpg",
             name: "pauw"
         }
     },
@@ -372,56 +372,56 @@ var allLetters = {
             name: "ei"
         }],
         molEnBeer: {
-            image: "",
+            image: "ei.jpg",
             name: "kei"
         }
     },
     c: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "carnaval.jpg",
             name: "carnaval"
         }
     },
     nk: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "bank.jpg",
             name: "bank"
         }
     },
     ng: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "wang.jpg",
             name: "wang"
         }
     },
     eeuw: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "leeuw.jpg",
             name: "leeuw"
         }
     },
     ieuw: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "nieuw.jpg",
             name: "nieuw"
         }
     },
     ch: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "lach.jpg",
             name: "lach"
         }
     },
     cht: {
         letterSteunAI: [],
         molEnBeer: {
-            image: "",
+            image: "lucht.jpg",
             name: "lucht"
         }
     }
