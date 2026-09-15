@@ -7,7 +7,8 @@ var allLetters = {
         molEnBeer: {
             image: "ik.jpg",
             name: "ik"
-        }
+        },
+        sound: "I.m4a"
     },
     k: {
         letterSteunAI: [{
@@ -17,7 +18,8 @@ var allLetters = {
         molEnBeer: {
             image: "ik.jpg",
             name: "ik"
-        }
+        },
+        sound: "K.m4a"
     },
     m: {
         letterSteunAI: [{
@@ -30,7 +32,8 @@ var allLetters = {
         molEnBeer: {
             image: "mol.jpg",
             name: "mol"
-        }
+        },
+        sound: "M.m4a"
     },
     o: {
         letterSteunAI: [{
@@ -43,7 +46,8 @@ var allLetters = {
         molEnBeer: {
             image: "mol.jpg",
             name: "mol"
-        }
+        },
+        sound: "O.m4a"
     },
     l: {
         letterSteunAI: [{
@@ -53,7 +57,8 @@ var allLetters = {
         molEnBeer: {
             image: "mol.jpg",
             name: "mol"
-        }
+        },
+        sound: "L.m4a"
     },
     b: {
         letterSteunAI: [{
@@ -63,7 +68,8 @@ var allLetters = {
         molEnBeer: {
             image: "beer.jpg",
             name: "beer"
-        }
+        },
+        sound: "B.m4a"
     },
     ee: {
         letterSteunAI: [{
@@ -73,7 +79,8 @@ var allLetters = {
         molEnBeer: {
             image: "beer.jpg",
             name: "beer"
-        }
+        },
+        sound: "Ee.m4a"
     },
     r: {
         letterSteunAI: [{
@@ -83,7 +90,8 @@ var allLetters = {
         molEnBeer: {
             image: "beer.jpg",
             name: "beer"
-        }
+        },
+        sound: "R.m4a"
     },
     a: {
         letterSteunAI: [{
@@ -93,7 +101,8 @@ var allLetters = {
         molEnBeer: {
             image: "an.jpg",
             name: "an"
-        }
+        },
+        sound: "A.m4a"
     },
     n: {
         letterSteunAI: [{
@@ -103,7 +112,8 @@ var allLetters = {
         molEnBeer: {
             image: "an.jpg",
             name: "an"
-        }
+        },
+        sound: "N.m4a"
     },
     t: {
         letterSteunAI: [{
@@ -113,7 +123,8 @@ var allLetters = {
         molEnBeer: {
             image: "tom.jpg",
             name: "tom"
-        }
+        },
+        sound: "T.m4a"
     },
     p: {
         letterSteunAI: [{
@@ -126,7 +137,8 @@ var allLetters = {
         molEnBeer: {
             image: "pen.jpg",
             name: "pen"
-        }
+        },
+        sound: "P.m4a"
     },
     e: {
         letterSteunAI: [{
@@ -136,7 +148,8 @@ var allLetters = {
         molEnBeer: {
             image: "pen.jpg",
             name: "pen"
-        }
+        },
+        sound: "E.m4a"
     },
     j: {
         letterSteunAI: [{
@@ -146,7 +159,8 @@ var allLetters = {
         molEnBeer: {
             image: "jas.jpg",
             name: "jas"
-        }
+        },
+        sound: "J.m4a"
     },
     s: {
         letterSteunAI: [{
@@ -156,7 +170,8 @@ var allLetters = {
         molEnBeer: {
             image: "jas.jpg",
             name: "jas"
-        }
+        },
+        sound: "S.m4a"
     },
     u: {
         letterSteunAI: [{
@@ -166,7 +181,8 @@ var allLetters = {
         molEnBeer: {
             image: "mus.jpg",
             name: "mus"
-        }
+        },
+        sound: "U.m4a"
     },
     v: {
         letterSteunAI: [{
@@ -176,7 +192,8 @@ var allLetters = {
         molEnBeer: {
             image: "vis.jpg",
             name: "vis"
-        }
+        },
+        sound: "V.m4a"
     },
     oe: {
         letterSteunAI: [{
@@ -186,7 +203,8 @@ var allLetters = {
         molEnBeer: {
             image: "poes.jpg",
             name: "poes"
-        }
+        },
+        sound: "Oe.m4a"
     },
     h: {
         letterSteunAI: [{
@@ -196,7 +214,8 @@ var allLetters = {
         molEnBeer: {
             image: "haan.jpg",
             name: "haan"
-        }
+        },
+        sound: "H.m4a"
     },
     aa: {
         letterSteunAI: [{
@@ -206,7 +225,8 @@ var allLetters = {
         molEnBeer: {
             image: "haan.jpg",
             name: "haan"
-        }
+        },
+        sound: "Aa.m4a"
     },
    oo: {
         letterSteunAI: [{
@@ -216,7 +236,8 @@ var allLetters = {
         molEnBeer: {
             image: "boom.jpg",
             name: "boom"
-        }
+        },
+        sound: "Oo.m4a"
     },
     w: {
         letterSteunAI: [{
@@ -226,7 +247,8 @@ var allLetters = {
         molEnBeer: {
             image: "weg.jpg",
             name: "weg"
-        }
+        },
+        sound: "W.m4a"
     },
     g: {
         letterSteunAI: [{
@@ -236,7 +258,8 @@ var allLetters = {
         molEnBeer: {
             image: "weg.jpg",
             name: "weg"
-        }
+        },
+        sound: "G.m4a"
     },
     uu: {
         letterSteunAI: [{
@@ -246,7 +269,8 @@ var allLetters = {
         molEnBeer: {
             image: "muur.jpg",
             name: "muur"
-        }
+        },
+        sound: "Uu.m4a"
     },
     d: {
         letterSteunAI: [{
@@ -256,7 +280,8 @@ var allLetters = {
         molEnBeer: {
             image: "deur.jpg",
             name: "deur"
-        }
+        },
+        sound: "D.m4a"
     },
     eu: {
         letterSteunAI: [{
@@ -266,7 +291,8 @@ var allLetters = {
         molEnBeer: {
             image: "deur.jpg",
             name: "deur"
-        }
+        },
+        sound: "Eu.m4a"
     },
     ij: {
         letterSteunAI: [{
@@ -276,14 +302,16 @@ var allLetters = {
         molEnBeer: {
             image: "ijs.jpg",
             name: "ijs"
-        }
+        },
+        sound: "Ij.m4a"
     },
     sch: {
         letterSteunAI: [],
         molEnBeer: {
             image: "school.jpg",
             name: "school"
-        }
+        },
+        sound: "Sch.m4a"
     },
     ie: {
         letterSteunAI: [{
@@ -293,7 +321,8 @@ var allLetters = {
         molEnBeer: {
             image: "vier.jpg",
             name: "vier"
-        }
+        },
+        sound: "Ie.m4a"
     },
     ou: {
         letterSteunAI: [{
@@ -303,7 +332,8 @@ var allLetters = {
         molEnBeer: {
             image: "touw.jpg",
             name: "touw"
-        }
+        },
+        sound: "Ou.m4a"
     },
     ui: {
         letterSteunAI: [{
@@ -313,7 +343,8 @@ var allLetters = {
         molEnBeer: {
             image: "duif.jpg",
             name: "duif"
-        }
+        },
+        sound: "Ui.m4a"
     },
     f: {
         letterSteunAI: [{
@@ -323,7 +354,8 @@ var allLetters = {
         molEnBeer: {
             image: "duif.jpg",
             name: "duif"
-        }
+        },
+        sound: "F.m4a"
     },
     z: {
         letterSteunAI: [{
@@ -333,28 +365,32 @@ var allLetters = {
         molEnBeer: {
             image: "zon.jpg",
             name: "zon"
-        }
+        },
+        sound: "Z.m4a"
     },
     aai: {
         letterSteunAI: [],
         molEnBeer: {
             image: "haai.jpg",
             name: "haai"
-        }
+        },
+        sound: "Aai.m4a"
     },
     ooi: {
         letterSteunAI: [],
         molEnBeer: {
             image: "kooi.jpg",
             name: "kooi"
-        }
+        },
+        sound: "Ooi.m4a"
     },
     oei: {
         letterSteunAI: [],
         molEnBeer: {
             image: "roei.jpg",
             name: "roei"
-        }
+        },
+        sound: "Oei.m4a"
     },
     au: {
         letterSteunAI: [{
@@ -364,7 +400,8 @@ var allLetters = {
         molEnBeer: {
             image: "pauw.jpg",
             name: "pauw"
-        }
+        },
+        sound: "Au.m4a"
     },
     ei: {
         letterSteunAI: [{
@@ -374,55 +411,63 @@ var allLetters = {
         molEnBeer: {
             image: "ei.jpg",
             name: "kei"
-        }
+        },
+        sound: "Ei.m4a"
     },
     c: {
         letterSteunAI: [],
         molEnBeer: {
             image: "carnaval.jpg",
             name: "carnaval"
-        }
+        },
+        sound: null
     },
     nk: {
         letterSteunAI: [],
         molEnBeer: {
             image: "bank.jpg",
             name: "bank"
-        }
+        },
+        sound: "Nk.m4a"
     },
     ng: {
         letterSteunAI: [],
         molEnBeer: {
             image: "wang.jpg",
             name: "wang"
-        }
+        },
+        sound: "Ng.m4a"
     },
     eeuw: {
         letterSteunAI: [],
         molEnBeer: {
             image: "leeuw.jpg",
             name: "leeuw"
-        }
+        },
+        sound: "Eeuw.m4a"
     },
     ieuw: {
         letterSteunAI: [],
         molEnBeer: {
             image: "nieuw.jpg",
             name: "nieuw"
-        }
+        },
+        sound: "Ieuw.m4a"
     },
     ch: {
         letterSteunAI: [],
         molEnBeer: {
             image: "lach.jpg",
             name: "lach"
-        }
+        },
+        sound: "Ch.m4a"
     },
     cht: {
         letterSteunAI: [],
         molEnBeer: {
             image: "lucht.jpg",
             name: "lucht"
-        }
+        },
+        sound: null
     }
 }
