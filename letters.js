@@ -44,7 +44,7 @@ $( document ).ready( function(){
             },
             sound: "M.m4a"
         },
-        /*o: {
+        o: {
             letterSteunAI: [{
                 image: "o-orkaan.png",
                 name: "orkaan"
@@ -237,7 +237,7 @@ $( document ).ready( function(){
             },
             sound: "Aa.m4a"
         },
-    oo: {
+        oo: {
             letterSteunAI: [{
                 image: "oo.png",
                 name: "oog"
@@ -478,13 +478,19 @@ $( document ).ready( function(){
                 name: "lucht"
             },
             sound: null
-        }*/
+        }
     }
     var allChallenges = {
         1: {
             challengeName: "Alle letters",
             level: 1,
-            baseWord:"alle letters",
+            baseWord:"Alle letters",
+            points: 1
+        },
+        2: {
+            challengeName: "Mijn moeilijke letters",
+            level: 2,
+            baseWord:"Mijn moeilijke letters",
             points: 1
         }
     }
