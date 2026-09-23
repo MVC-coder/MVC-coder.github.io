@@ -486,12 +486,6 @@ $( document ).ready( function(){
             level: 1,
             baseWord:"Alle letters",
             points: 1
-        },
-        2: {
-            challengeName: "Mijn moeilijke letters",
-            level: 2,
-            baseWord:"Mijn moeilijke letters",
-            points: 1
         }
     }
     function createChallengeButtons(allChallenges){
