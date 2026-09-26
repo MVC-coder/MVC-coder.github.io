@@ -1,3 +1,4 @@
+// var allLetters is imported in the HTML <script src="./variables.js"></script>
 $( document ).ready( function(){
     hideAllNextChallengeImages();
     
@@ -99,9 +100,7 @@ $( document ).ready( function(){
             points: 1,
             words: ["zon","zoon","zool","zin","ziek","zak","zoek","zie","zoen","zal","zeef","zoem","zes","zet","duik","buik","vuil","kou","schouw","biet","zie","schaal"]
         }
-        
     }
-
 /* EMPTY LEVEL TEMPLATE
 7: {
             level: 7,
@@ -111,6 +110,79 @@ $( document ).ready( function(){
             words: ["","","","","","","","","","","","","","","","","","","","","","","","","","",""]
         }
 */
+    function wordToSounds(word){
+        var vowels = ["a","e","i","o","u"];
+        var commaSeparatedString = "";
+        for(let i=0; i<word.length; i++){
+        
+            var letter = word.charAt(i);
+            if(vowels.includes(letter)){
+                // current letter is a vowel
+                if(letter === "i" && word.charAt(i+1) === "j"){
+                    // ij
+                    commaSeparatedString = commaSeparatedString + letter + word.charAt(i+1)
+                    if(i+2 < word.length){
+                        commaSeparatedString = commaSeparatedString + ",";
+                    }
+                    i++;
+                } else if(vowels.includes(word.charAt(i+1))){
+                    // the next letter is also a vowel
+                    if(vowels.includes(word.charAt(i+2))){
+                    // the next next letter is also a vowel => aai, eeu, oei
+                        commaSeparatedString = commaSeparatedString + letter + word.charAt(i+1) + word.charAt(i+2);
+                        if(i+3 < word.length){
+                            commaSeparatedString = commaSeparatedString + ",";
+                        }
+                        i = i + 2;
+                    
+                    } else {
+                        // the next next letter is not a vowel => ee, au, ... 
+                        commaSeparatedString = commaSeparatedString + letter + word.charAt(i+1);
+                        if(i+2 < word.length){
+                            commaSeparatedString = commaSeparatedString + ",";
+                        }
+                        i++;
+                    }
+                } else {
+                    // the next letter is not a vowel
+                    commaSeparatedString = commaSeparatedString + letter;
+                    if(i+1 < word.length){
+                        commaSeparatedString = commaSeparatedString + ",";
+                    }
+                }
+            }
+            if(!vowels.includes(letter)){
+                // letter is not a vowel
+                if(letter === "s" && word.charAt(i+1) === "c" && word.charAt(i+2) === "h"){
+                    commaSeparatedString = commaSeparatedString + letter + word.charAt(i+1) + word.charAt(i+2);
+                    if(i+3 < word.length){
+                            commaSeparatedString = commaSeparatedString + ",";
+                    }
+                    i = i + 2;
+                } else if(letter === "n" && (word.charAt(i+1) === "g" || word.charAt(i+1) === "k")){
+                    // ng or nk
+                    commaSeparatedString = commaSeparatedString + letter + word.charAt(i+1);
+                    if(i+2 < word.length){
+                        commaSeparatedString = commaSeparatedString + ",";
+                    }
+                    i++;
+                } else if(letter === "c" && word.charAt(i+1) === "h"){
+                    // ch
+                    commaSeparatedString = commaSeparatedString + letter + word.charAt(i+1);
+                    if(i+2 < word.length){
+                        commaSeparatedString = commaSeparatedString + ",";
+                    }
+                    i++;
+                } else {
+                    commaSeparatedString = commaSeparatedString + letter;
+                    if(i+1 < word.length){
+                            commaSeparatedString = commaSeparatedString + ",";
+                    }
+                }
+            }
+        }
+        return commaSeparatedString;
+    }
 
     var allChallengesL2 = {
         1: {
@@ -118,7 +190,7 @@ $( document ).ready( function(){
             challengeName: "km / mk",
             baseWord: "ik",
             points: 4,
-            words: ["uk","ook","ik","aal","al","aas","os","is","eet","at","mee","oom","om","en","een","nee","aan","in","fee","eef","af","of","vee","aap","zee","zoo","oog","wee","ree","oor"]
+            words: ["lach","ik","aal","al","aas","os","is","eet","at","mee","oom","om","en","een","nee","aan","in","fee","eef","af","of","vee","aap","zee","zoo","oog","wee","ree","oor"]
         },
         2: {
             level: 2,
@@ -283,6 +355,15 @@ $( document ).ready( function(){
     const challenge = urlParams.get('challenge');
     $("#correctButton").on("click", correctClicked);
     $("#wrongButton").on("click", wrongClicked);
+
+    $("#wordHolder").on("click",".audioLetter", function(){
+        var letter = $(this).text();
+        var sound = allLetters[letter].sound;
+        var soundPath = "./sounds/letters/MVC/"+sound;
+        var audio = new Audio(soundPath);
+        audio.play();
+    });
+
     function correctClicked(){
         showNewPoints(allChallenges[currentLevel]["points"]);
         correctCounter++;
@@ -378,8 +459,21 @@ $( document ).ready( function(){
     function showNextWord(){
         var index = correctCounter + wrongCounter;
         var word = allWords[index];
-        $("#wordHolder").text(word);
+        var audioWordElement = createAudioWordElement(word);
+        $("#wordHolder").html(audioWordElement);
     }
+    
+    function createAudioWordElement(word){
+        var commaSeparatedString = wordToSounds(word);
+        var letterArray = commaSeparatedString.split(",");
+        var audioWordElements = [];
+        for (let i = 0; i < letterArray.length; i++) {
+            var letter = letterArray[i];
+            audioWordElements.push("<span class='audioLetter'>" + letter + "</span>");
+        }
+        return audioWordElements.toString().replaceAll(",","");
+    }
+
     function shuffleArray(array) {
         for (let i = array.length - 1; i >= 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
