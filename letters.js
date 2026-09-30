@@ -113,10 +113,7 @@ $( document ).ready( function(){
     
     $("#letterHolder").on("click",".audioLetter", function(){
         var letter = $(this).text();
-        var sound = allLetters[letter].sound;
-        var soundPath = "./sounds/letters/MVC/"+sound;
-        var audio = new Audio(soundPath);
-        audio.play();
+        playAudioLetter(letter);
     });
    
     createChallengeButtons(allChallenges);

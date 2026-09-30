@@ -414,14 +414,14 @@
             },
             sound: "Ei.m4a"
         },
-        c: {
+        /*c: {
             letterSteunAI: [],
             molEnBeer: {
                 image: "carnaval.jpg",
                 name: "carnaval"
             },
             sound: null
-        },
+        },*/
         nk: {
             letterSteunAI: [],
             molEnBeer: {
@@ -461,7 +461,7 @@
                 name: "lach"
             },
             sound: "Ch.m4a"
-        },
+        }/*,
         cht: {
             letterSteunAI: [],
             molEnBeer: {
@@ -469,5 +469,13 @@
                 name: "lucht"
             },
             sound: null
-        }
+        }*/
     }
+function playAudioLetter(letter){
+    if(allLetters[letter] && allLetters[letter].sound){
+        var sound = allLetters[letter].sound;
+        var soundPath = "./sounds/letters/MVC/"+sound;
+        var audio = new Audio(soundPath);
+        audio.play();
+    }
+}

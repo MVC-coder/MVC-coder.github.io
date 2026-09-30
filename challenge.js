@@ -358,10 +358,7 @@ $( document ).ready( function(){
 
     $("#wordHolder").on("click",".audioLetter", function(){
         var letter = $(this).text();
-        var sound = allLetters[letter].sound;
-        var soundPath = "./sounds/letters/MVC/"+sound;
-        var audio = new Audio(soundPath);
-        audio.play();
+        playAudioLetter(letter);
     });
 
     function correctClicked(){

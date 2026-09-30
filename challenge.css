@@ -107,6 +107,21 @@
   .smallText{
     font-size: 10px;
   }
-  .audioLetter{
+  .audioLetter, .audioLetter2, .audioLetter3, .audioLetter4 {
     cursor: pointer;
+  }
+  #letterHolder.letterOverview .audioLetter{
+    font-size: 60px;
+  }
+  #letterHolder.letterOverview .audioLetter2{
+    font-size: 50px;
+  }
+  #letterHolder.letterOverview .audioLetter3{
+  font-size: 40px;
+  }
+  #letterHolder.letterOverview .audioLetter4{
+    font-size: 30px;
+  }
+  #letterHolder.letterOverview table{
+    width: 100%;
   }
