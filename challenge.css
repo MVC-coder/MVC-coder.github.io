@@ -21,7 +21,7 @@
   #pointsPerCorrectWord.growLetters{
     font-size: 48px;
   }
-  #wordHolder{
+  #wordHolder,#letterHolder{
     font-size: 64px;
   }
   .whiteBackground{
@@ -106,4 +106,7 @@
   }
   .smallText{
     font-size: 10px;
+  }
+  .audioLetter{
+    cursor: pointer;
   }

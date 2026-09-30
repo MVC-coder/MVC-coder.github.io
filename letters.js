@@ -28,8 +28,7 @@ $( document ).ready( function(){
         const random = Math.floor(Math.random() * lettersCurrentChallenge.length)
         var nextLetter = lettersCurrentChallenge[random];
         nextLetterIndex = random;
-        $("#letterHolder").text(nextLetter[0]);
-        $("#audioElement").attr("src","./sounds/letters/MVC/"+nextLetter[1].sound);
+        $("#letterHolder").html("<span class='audioLetter'>" + nextLetter[0] + "</span>");
     }
     $("#challengeButtonsHolder").on('click', '.challengeBtn', function () {
         $("#thumbs-up-img").hide();
@@ -110,6 +109,16 @@ $( document ).ready( function(){
         $("#correctButton").prop("disabled",false);
         $("#wrongButton").prop("disabled",false);
     }
+    
+    
+    $("#letterHolder").on("click",".audioLetter", function(){
+        var letter = $(this).text();
+        var sound = allLetters[letter].sound;
+        var soundPath = "./sounds/letters/MVC/"+sound;
+        var audio = new Audio(soundPath);
+        audio.play();
+    });
+   
     createChallengeButtons(allChallenges);
     $("#correctButton").on("click", correctClicked);
     $("#wrongButton").on("click", wrongClicked);
