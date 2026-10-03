@@ -109,6 +109,7 @@
   }
   .audioLetter, .audioLetter2, .audioLetter3, .audioLetter4 {
     cursor: pointer;
+    padding: 0px 15px;
   }
   #letterHolder.letterOverview .audioLetter{
     font-size: 60px;
