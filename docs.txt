@@ -1,2 +1,8 @@
 app openen: 
 file:///C:/MVC/programmeren/mvc-coder.github.io/index.html
+
+
+changes in w3.css
+
+/*.w3-jumbo{font-size:64px!important}*/ (dit zorgde dat het kruisje in hamburgermenu veel te laag stond)
+

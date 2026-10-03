@@ -125,3 +125,6 @@
   #letterHolder.letterOverview table{
     width: 100%;
   }
+  .fa.fa-remove{
+      font-size: 24px;
+  }
