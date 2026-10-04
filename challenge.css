@@ -129,3 +129,11 @@
   .fa.fa-remove{
       font-size: 24px;
   }
+
+
+/* lettersOverview */
+
+  nav label{
+    margin-left: 10px;
+      text-decoration: underline;
+  }
