@@ -105,6 +105,10 @@ $( document ).ready( function(){
         $("#letterHolder").append(letterElements.toString().replaceAll(',',''));
         $("#letterHolder").show();
     })
+    $( "#dialog").dialog({
+        autoOpen: false,
+        hide: "explode",
+    });
     createLettersK3Options();
     createWordsL1Options();
 });

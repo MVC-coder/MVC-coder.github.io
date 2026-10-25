@@ -6,3 +6,18 @@ changes in w3.css
 
 /*.w3-jumbo{font-size:64px!important}*/ (dit zorgde dat het kruisje in hamburgermenu veel te laag stond)
 
+Google APIS
+
+Cloud Text-to-speech
+
+https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types
+
+List of all supported languages
+
+
+nl-BE-Standard-C FEMALE
+nl-BE-Standard-D MALE
+
+nl-BE-Wavenet-C
+
+https://cloud.google.com/solution-generator/3bgVontuhoroe7SAsz1AHPvrmWMmcPPYlU_AExaNs0Itqo2JUHJPog==?q=I+want+my+app+to+show+words+with+an+option+to+have+the+words+read+by+a+google+api&bqc=1&attributed_url=https%3A%2F%2Fcloud.google.com%2Ftext-to-speech%23what-problem-are-you-trying-to-solve#what-problem-are-you-trying-to-solve
